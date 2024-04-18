@@ -15,6 +15,13 @@ public class UserController {
         return user;
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
+    @PostMapping("/send-message")
+    public String sendMessage(@RequestBody String message) {
+        logger.info("Received message: {}", message);
+        return message;
+    }
+
     public static class User {
         private String name;
         private String email;
