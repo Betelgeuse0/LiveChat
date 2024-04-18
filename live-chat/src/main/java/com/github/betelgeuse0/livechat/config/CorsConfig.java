@@ -1,4 +1,4 @@
-package com.github.betelgeuse0.livechat.example.config;
+package com.github.betelgeuse0.livechat.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

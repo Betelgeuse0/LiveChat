@@ -1,4 +1,4 @@
-package com.github.betelgeuse0.livechat.example.controller.controller;
+package com.github.betelgeuse0.livechat.example.controller.usercontroller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
@@ -13,13 +13,6 @@ public class UserController {
     public User addUser(@RequestBody User user) {
         logger.info("Received user: {}", user);
         return user;
-    }
-
-    @CrossOrigin(origins = "http://localhost:3000")
-    @PostMapping("/send-message")
-    public String sendMessage(@RequestBody String message) {
-        logger.info("Received message: {}", message);
-        return message;
     }
 
     public static class User {

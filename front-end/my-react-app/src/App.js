@@ -27,12 +27,19 @@
 import React from 'react';
 import './App.css';
 import UserForm from './UserForm';
+import ChatForm from './ChatForm';
 
 function App() {
+    // return (
+    //     <div className="App">
+    //         <h1>User Form</h1>
+    //         <UserForm />
+    //     </div>
+    // );
     return (
         <div className="App">
-            <h1>User Form</h1>
-            <UserForm />
+            <h1>Chat Form</h1>
+            <ChatForm />
         </div>
     );
 }
